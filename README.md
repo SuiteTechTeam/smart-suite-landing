@@ -1,32 +1,47 @@
-# SweetManager
+# Astro Starter Kit: Minimal
 
-**SweetManager** is a comprehensive hotel management software that streamlines operations for hotel administrators and workers. The platform allows for easy management of room details, booking processes, staff communication, and inventory supplies. SweetManager ensures efficient hotel management by assigning specific roles to administrators and workers, with a system that handles real-time notifications and task management.
+```sh
+bun create astro@latest -- --template minimal
+```
 
----
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-## Features
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- **Role-Based Access**: Different functionalities for managers, workers, and main administrators.
-- **10 Work Areas**: Tailored interfaces for different hotel departments like Kitchen Staff, Housekeeping, Security, Reception, etc.
-- **Real-Time Notifications**: Admins can send notifications to specific worker areas in real time.
-- **Room Management**: View and manage room details, bookings, and availability.
-- **Supplies and Inventory**: Manage stock levels and ensure proper communication with suppliers.
-- **Subscription Model**: Administrators can subscribe to manage their hotel organization and invite other users.
+## 🚀 Project Structure
 
----
+Inside of your Astro project, you'll see the following folders and files:
 
-## Roles
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-- **ROLE_MANAGER**: Manage hotel-wide operations, including rooms, workers, supplies, and notifications.
-- **ROLE_WORKER**: Perform specific tasks based on the assigned work area and receive real-time notifications.
-- **ROLE_MAIN_ADMIN**: [Upcoming] Full administrative control, including subscription management and organization setup.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
----
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-## Tech Stack
+Any static assets, like images, can be placed in the `public/` directory.
 
-- **Frontend**: React (with Vite for bundling)
-- **Backend**: .NET Web API
-- **Database**: MySQL (with JWT Authentication for secure access)
-- **Containerization**: Docker (for easy deployment with both API and MySQL containers)
-- **Architecture**: CQRS, Domain Driven Design, SCRUM for development process
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `bun install`             | Installs dependencies                            |
+| `bun dev`             | Starts local dev server at `localhost:4321`      |
+| `bun build`           | Build your production site to `./dist/`          |
+| `bun preview`         | Preview your build locally, before deploying     |
+| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `bun astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
