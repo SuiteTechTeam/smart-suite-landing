@@ -1,0 +1,124 @@
+---
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { CheckCircle } from "@lucide/astro";
+---
+<section id="precios" class="w-full py-12 md:py-24 lg:py-32 bg-gray-50" data-aos="fade-up">
+  <div class="container px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" data-aos="fade-right" data-aos-delay="200">
+          Planes adaptados a sus necesidades
+        </h2>
+        <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed" data-aos="fade-left" data-aos-delay="300">
+          Elija el plan que mejor se adapte al tamaño y necesidades de su hotel
+        </p>
+      </div>
+    </div>    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8 mt-8">
+      <Card className="flex flex-col" data-aos="zoom-in" data-aos-delay="400">
+        <CardHeader>
+          <CardTitle>Básico</CardTitle>
+          <CardDescription>Para hoteles pequeños</CardDescription>
+          <div class="mt-4 text-4xl font-bold">
+            S/99<span class="text-base font-normal text-gray-500">/mes</span>
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1">
+          <ul class="grid gap-2">
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Gestión de ingresos y gastos</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Gestión básica de inventario</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Hasta 10 usuarios</span>
+            </li>            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Soporte por email</span>
+            </li>
+          </ul>
+        </CardContent>
+        <div class="p-6 pt-0 mt-auto">
+          <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Comenzar</Button>
+        </div>
+      </Card>
+      <Card className="flex flex-col border-emerald-600" data-aos="zoom-in" data-aos-delay="500">
+        <CardHeader>
+          <div class="px-4 py-1 text-xs font-bold bg-emerald-600 text-white rounded-full w-fit mb-2">
+            POPULAR
+          </div>
+          <CardTitle>Profesional</CardTitle>
+          <CardDescription>Para hoteles medianos</CardDescription>
+          <div class="mt-4 text-4xl font-bold">
+            S/199<span class="text-base font-normal text-gray-500">/mes</span>
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1">
+          <ul class="grid gap-2">
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Todo lo del plan Básico</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Gestión avanzada de inventario</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Gestión de proveedores</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Hasta 25 usuarios</span>
+            </li>            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Soporte prioritario</span>
+            </li>
+          </ul>
+        </CardContent>
+        <div class="p-6 pt-0 mt-auto">
+          <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Comenzar</Button>
+        </div>
+      </Card>
+      <Card className="flex flex-col" data-aos="zoom-in" data-aos-delay="600">
+        <CardHeader>
+          <CardTitle>Empresarial</CardTitle>
+          <CardDescription>Para cadenas hoteleras</CardDescription>
+          <div class="mt-4 text-4xl font-bold">
+            S/399<span class="text-base font-normal text-gray-500">/mes</span>
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1">
+          <ul class="grid gap-2">
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Todo lo del plan Profesional</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Gestión completa de RRHH</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Análisis avanzado y reportes</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Usuarios ilimitados</span>
+            </li>            <li class="flex items-center gap-2">
+              <CheckCircle class="h-4 w-4 text-emerald-600" />
+              <span>Soporte 24/7 y gerente dedicado</span>
+            </li>
+          </ul>
+        </CardContent>
+        <div class="p-6 pt-0 mt-auto">
+          <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Contactar ventas</Button>
+        </div>
+      </Card>
+    </div>
+  </div>
+</section>

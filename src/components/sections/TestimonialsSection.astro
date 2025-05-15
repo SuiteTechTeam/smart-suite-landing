@@ -1,0 +1,61 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+---
+<section class="w-full py-12 md:py-24 lg:py-32" data-aos="fade-up">
+  <div class="container px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" data-aos="fade-right" data-aos-delay="200">
+          Lo que dicen nuestros clientes
+        </h2>
+        <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed" data-aos="fade-left" data-aos-delay="300">
+          Hoteles de todo el mundo confían en Smart Suite para su gestión diaria
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12 mt-8">
+      <Card data-aos="zoom-in" data-aos-delay="400">
+        <CardContent className="pt-6">
+          <div class="flex flex-col gap-4">
+            <p class="text-gray-500 italic">
+              "Smart Suite ha revolucionado la forma en que gestionamos nuestro hotel. Ahora tenemos control
+              total sobre todas nuestras operaciones."
+            </p>
+            <div>
+              <p class="font-semibold">Carlos Rodríguez</p>
+              <p class="text-sm text-gray-500">Director, Hotel Mirador</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="500">
+        <CardContent className="pt-6">
+          <div class="flex flex-col gap-4">
+            <p class="text-gray-500 italic">
+              "Desde que implementamos Smart Suite, hemos reducido nuestros costos operativos en un 30% y
+              mejorado la satisfacción de nuestros huéspedes."
+            </p>
+            <div>
+              <p class="font-semibold">Ana Martínez</p>
+              <p class="text-sm text-gray-500">Gerente, Grand Hotel Plaza</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="600">
+        <CardContent className="pt-6">
+          <div class="flex flex-col gap-4">
+            <p class="text-gray-500 italic">
+              "La interfaz intuitiva y el soporte excepcional hacen de Smart Suite la mejor inversión que hemos
+              realizado para nuestro hotel."
+            </p>
+            <div>
+              <p class="font-semibold">Miguel Sánchez</p>
+              <p class="text-sm text-gray-500">Propietario, Hotel Costa Azul</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+import { Button } from "@/components/ui/button";
+---
+<section class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-emerald-50 to-teal-50" data-aos="fade-up">
+  <div class="container px-4 md:px-6">
+    <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+      <div class="flex flex-col justify-center space-y-4">
+        <div class="space-y-2">
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            Gestión hotelera simplificada con Smart Suite
+          </h1>
+          <p class="max-w-[600px] text-gray-500 md:text-xl">
+            Una solución integral para optimizar todas las operaciones de su hotel, disponible como aplicación
+            web y móvil para gestionar su negocio desde cualquier lugar y en cualquier momento.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 min-[400px]:flex-row" data-aos="fade-up" data-aos-delay="200">
+          <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+            Solicitar Demo
+          </Button>
+          <Button size="lg" variant="outline">
+            Conocer más
+          </Button>
+        </div>
+      </div>
+      <div class="mx-auto w-full max-w-[500px] lg:max-w-none" data-aos="fade-left" data-aos-delay="300">
+        <img
+          src="/placeholder.svg?height=550&width=750"
+          width={750}
+          height={550}
+          alt="Dashboard de Smart Suite"
+          class="w-full h-auto rounded-lg shadow-xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>

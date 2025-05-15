@@ -1,0 +1,112 @@
+---
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { BarChart3, Package, Users, CreditCard, Clock, Shield } from "@lucide/astro";
+---
+<section id="caracteristicas" class="w-full py-12 md:py-24 lg:py-32" data-aos="fade-up">
+  <div class="container px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" data-aos="fade-right" data-aos-delay="200">
+          Características principales
+        </h2>
+        <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed" data-aos="fade-left" data-aos-delay="300">
+          Smart Suite ofrece todas las herramientas necesarias para una gestión hotelera eficiente
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8 [&>*:last-child]:lg:col-span-3 [&>*:last-child]:lg:mx-auto [&>*:last-child]:lg:max-w-sm">
+      <Card data-aos="zoom-in" data-aos-delay="400">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <BarChart3 class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Seguimiento de ingresos y gastos</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Control total sobre las finanzas de su hotel con informes detallados y análisis en tiempo real.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="500">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <Package class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Gestión de inventario</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Administre eficientemente todos los insumos y recursos disponibles en su hotel.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="600">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <Users class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Recursos humanos</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Gestione su personal, turnos, y evaluaciones desde una única plataforma integrada.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="700">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <CreditCard class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Gestión de proveedores</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Mantenga relaciones óptimas con sus proveedores y gestione pedidos y pagos.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="800">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <Clock class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Acceso 24/7</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Acceda a su información desde cualquier lugar y en cualquier momento.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="900">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <Shield class="h-8 w-8 text-emerald-600" />
+          <CardTitle>Seguridad avanzada</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Protección de datos y privacidad con los más altos estándares de seguridad.
+          </CardDescription>
+        </CardContent>
+      </Card>
+      <Card data-aos="zoom-in" data-aos-delay="1000">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-8 w-8 text-emerald-600"
+          >
+            <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+            <path d="M12 18h.01" />
+          </svg>
+          <CardTitle>Aplicación Web y Móvil</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Acceda a todas las funcionalidades desde su computadora o dispositivo móvil, con sincronización en
+            tiempo real.
+          </CardDescription>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
